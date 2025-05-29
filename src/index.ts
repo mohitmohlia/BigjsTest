@@ -15,6 +15,7 @@ interface Transactions {
 
 function calculate(transactions: Transaction[]) {
   let total = new Big(0);
+
   for (const transaction of transactions) {
     total = total.plus(transaction.amount);
   }
