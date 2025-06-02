@@ -46,7 +46,7 @@ const rl = readline.createInterface({
 });
 
 // Ask for initial number
-rl.question("Enter initial number (default 0): ", (initialNumber) => {
+rl.question("Enter initial Cleared balance (default 0): ", (initialNumber) => {
   const initialBalance = initialNumber ? parseFloat(initialNumber) : undefined;
 
   // Ask for bank balance
