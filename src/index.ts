@@ -19,7 +19,7 @@ function calculate(
   let total = new Big(initialBalance ?? 0);
 
   for (const transaction of transactions) {
-    total = total.plus(transaction.amount);
+    total = total.minus(transaction.amount);
     console.log(total.toNumber());
   }
   console.log("Total Cleared balance :", total.toNumber());
